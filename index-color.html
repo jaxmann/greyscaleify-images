@@ -115,7 +115,7 @@
 		for (var i = 0, n = pix.length; i < n; i += 4) {
 
 			//console.log(pix[i], pix[i+1], pix[i+2]); 
-			if (pix[i] < 255 && pix[i+1] < 255 && pix[i+2] < 255) {
+			if (pix[i] < 255 && pix[i+1] < 255 && pix[i+2] < 255 && pix[i] > 10 && pix[i+1] > 10 && pix[i+2] > 10) { //comment if want to invert entire thing, not just non-white parts
 				pix[i] = 255 - pix[i];  
 				pix[i+1] = 255 - pix[i+1] ;  
 				pix[i+2] = 255 - pix[i+2] ;

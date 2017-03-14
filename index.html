@@ -104,13 +104,13 @@
 		var image = document.getElementById(imageSource);
 
 		ctx.drawImage(image, 0, 0);
-		console.log(ctx.getImageData(0,0,96,72))
+		//console.log(ctx.getImageData(0,0,96,72))
 
-		image.crossOrigin = "Anonymous";
+		image.crossOrigin = "Anonymous"; //prevents some cross-origin errors
 		var imgd = ctx.getImageData(0, 0, 96, 72);
-		console.log(imgd)
+		//console.log(imgd)
 		var pix = imgd.data;
-		var blackpixel = 110; 
+		var blackpixel = 110; //set to desired level of grey (0-255)
 		for (var i = 0, n = pix.length; i < n; i += 4) {
 
 			//console.log(pix[i], pix[i+1], pix[i+2]); 

@@ -71,7 +71,7 @@
 
 <body>
 	<div class='circle-container'>
-		<a href='#' class='deg270'><canvas id="canvas1" style="background-color:white;  width:355px"></canvas><img id="source1" style="display:none" src='./assets/premierleague2.png'></a>
+		<a href='#' class='deg270'><canvas id="canvas1" style="background-color:white;  width:300px"></canvas><img id="source1" style="display:none" src='./assets/premleague.png'></a>
 		<a href='#' class='deg342'><canvas id="canvas2" style="background-color:white; width:300px"></canvas><img id="source2" style="display:none" src='./assets/laliga2.png'></a>
 		<a href='#' class='deg54'><canvas id="canvas3" style="background-color:white; width:300px"></canvas><img id="source3" style="display:none" src='./assets/ligue12.png'></a>
 		<a href='#' class='deg126'><canvas id="canvas4" style="background-color:white;  width:300px"></canvas><img id="source4" style="display:none" src='./assets/bundesliga2.png'/></a>
@@ -133,7 +133,7 @@
 		//console.log(ctx.getImageData(0,0,96,72))
 
 		image.crossOrigin = "Anonymous"; //prevents some cross-origin errors
-		var imgd = ctx.getImageData(0, 0, 96, 72);
+		var imgd = ctx.getImageData(0, 0, 96, 96);
 		//console.log(imgd)
 		var pix = imgd.data;
 		var blackpixel = 110; //set to desired level of grey (0-255)
